@@ -45,12 +45,10 @@ const BookDetails = () => {
           src={info.imageLinks?.thumbnail}
           alt={info.title}
         />
-
         <div className="details-info">
           <h1>{info.title}</h1>
           <p>{info.authors?.join(", ") || "Unknown Author"}</p>
-
-          {/* ----------- NEW SECTION: BOOK DETAILS ----------- */}
+          
           <div className="extra-details">
             {info.publishedDate && (
               <p><strong>Published:</strong> {info.publishedDate}</p>

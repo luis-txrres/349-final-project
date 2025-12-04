@@ -30,7 +30,7 @@ const Reviews = ({ bookId }) => {
   return (
     <div className="reviews-container">
       <h3>User Reviews</h3>
-
+      <br />
       <div className="review-form">
         <input
           type="text"
@@ -50,7 +50,7 @@ const Reviews = ({ bookId }) => {
             </option>
           ))}
         </select>
-        <button onClick={handleAddReview}>Add Review</button>
+        <button className = "checkout-button" onClick={handleAddReview}>Add Review</button>
       </div>
 
       <div className="review-list">
