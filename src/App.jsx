@@ -1,11 +1,12 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Home from './pages/Home';
 import BookList from './pages/BookList';
 import Checkout from './pages/Checkout';
 import BookDetails from './pages/BookDetails';
 import Contact from './pages/Contact';
+import AdminDashboard from './pages/AdminDashboard';
 import { BookListProvider } from './contexts/BookListContext';
 import { ToastContainer } from 'react-toastify';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -32,6 +33,7 @@ function App() {
                 <Route path = "/booklist" element = {<BookList />}/>
                 <Route path = "/checkout" element = {<Checkout />}/>
                 <Route path = "/contact" element = {<Contact />}/>
+                <Route path = "/admin" element = {<AdminDashboard />}/>
               </Routes>
           </main>
          <ToastContainer position="top-right" autoClose={2000} /> 
