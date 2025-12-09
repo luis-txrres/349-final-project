@@ -17,8 +17,6 @@ const Header = () => {
     }
   }, [totalQuantity]);
 
-
-
   return (
     
     <header className="header">
@@ -59,8 +57,6 @@ const Header = () => {
             Admin
           </NavLink>
         </li>
-
-
       </ul>
     </header>
     

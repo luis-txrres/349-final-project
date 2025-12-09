@@ -1,5 +1,4 @@
 
-
 const SearchBar = ({ setQuery }) => {
   return (
     <div className="book-search-bar">

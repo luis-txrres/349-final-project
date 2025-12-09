@@ -1,5 +1,3 @@
-
-
 import React, { useContext } from "react";
 import { BookListContext } from "../contexts/BookListContext";
 
@@ -67,7 +65,7 @@ const Checkout = () => {
           </button>
         </form>
 
-        {/* Right: Order Summary */}
+        {/*order summary*/}
         <div className="checkout-summary">
           <h3>Order Summary</h3>
           <br />

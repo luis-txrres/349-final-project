@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BookListContext } from "../contexts/BookListContext";
@@ -42,11 +41,6 @@ const BookCard = ({ id, title, authors, image, published }) => {
         </Link>
         <button onClick={handleAdd}>Add to Book List</button>
       </div>
-
-      {/* <Link className="view-details-button" to={`/book/${id}`}>
-        View Book Details
-      </Link>
-      <button onClick={handleAdd}>Add to Book List</button> */}
     </div>
   );
 };

@@ -4,7 +4,7 @@ import DisplayBooks from "./DisplayBooks";
 
 const BooksPage = () => {
   const [books, setBooks] = useState([]);
-  const [category, setCategory] = useState("Fantasy"); // default
+  const [category, setCategory] = useState("Fantasy"); 
 
   const fetchBooks = async (cat) => {
     const q = `subject:${cat}`;

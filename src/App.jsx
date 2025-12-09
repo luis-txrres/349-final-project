@@ -11,7 +11,7 @@ import { BookListProvider } from './contexts/BookListContext';
 import { ToastContainer } from 'react-toastify';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const theme = createTheme({
+const theme = createTheme({   //saw this in a video but not sure if it works 
   palette: {
     primary: { main: "#1976d2" },
     secondary: { main: "#9c27b0" },

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { BookListContext } from '../contexts/BookListContext';
@@ -70,7 +69,7 @@ const BookDetails = () => {
               <p><strong>Language:</strong> {info.language.toUpperCase()}</p>
             )}
 
-            {/* ISBNs */}
+            {/*isbns*/}
             {info.industryIdentifiers?.length > 0 && (
               <>
                 <p><strong>ISBN-10:</strong> {info.industryIdentifiers.find(i => i.type === "ISBN_10")?.identifier || "N/A"}</p>
@@ -78,7 +77,7 @@ const BookDetails = () => {
               </>
             )}
 
-            {/* Preview link */}
+            {/*the preview link*/}
             {info.previewLink && (
               <p>
                 <a
@@ -93,7 +92,7 @@ const BookDetails = () => {
             )}
           </div>
 
-          {/* ----------- DESCRIPTION ----------- */}
+          {/* description*/}
           {info.description && (
             <p className="book-description">
               <span>Description</span>
@@ -102,7 +101,7 @@ const BookDetails = () => {
             </p>
           )}
 
-          {/* ----------- ADD TO BOOK LIST BUTTON ----------- */}
+          {/*Add to booklist button*/}
           <button
             onClick={() => {
               addToBookList({

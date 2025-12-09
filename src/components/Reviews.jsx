@@ -6,13 +6,11 @@ const Reviews = ({ bookId }) => {
   const [comment, setComment] = useState("");
   const [rating, setRating] = useState(5);
 
-  // Load reviews from localStorage
   useEffect(() => {
     const stored = localStorage.getItem(`reviews_${bookId}`);
     if (stored) setReviews(JSON.parse(stored));
   }, [bookId]);
 
-  // Add new review
   const handleAddReview = () => {
     if (!name.trim() || !comment.trim()) return;
 
@@ -21,7 +19,6 @@ const Reviews = ({ bookId }) => {
     setReviews(updated);
     localStorage.setItem(`reviews_${bookId}`, JSON.stringify(updated));
 
-    // Clear form
     setName("");
     setComment("");
     setRating(5);

@@ -10,7 +10,7 @@ body {
 }
 
 .main-content {
-  flex: 1; /* take remaining space */
+  flex: 1; 
   padding: 20px;
 }
 
@@ -153,7 +153,6 @@ a {
   cursor: pointer;
 }
 
-/* Selected field */
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -170,13 +169,11 @@ a {
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
-/* Selected text */
 .selected {
   font-size: 14px;
   color: #9b9b9b;
 }
 
-/* Arrow icon */
 .arrow {
   font-size: 20px;
   transition: transform 0.2s ease;
@@ -186,7 +183,6 @@ a {
   transform: rotate(180deg);
 }
 
-/* Dropdown list container */
 .filterList {
   position: absolute;
   top: calc(100% + 6px);
@@ -203,14 +199,12 @@ a {
   z-index: 20;
 }
 
-/* Show dropdown */
 .filterList.show {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-/* Dropdown items */
 .items {
   padding: 10px 14px;
   font-size: 14px;
@@ -225,7 +219,6 @@ a {
   color: #111;
 }
 
-/* Text inside items */
 .filterItemsText {
   pointer-events: none;
 }
@@ -240,7 +233,6 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
 .books-container h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -249,7 +241,6 @@ a {
   color: #222;
 }
 
-/* Grid layout */
 .books-shown {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -257,7 +248,6 @@ a {
   margin-top: 10px;
 }
 
-/* Book card */
 .entire-book-card {
   background: #ffffff;
   padding: 15px;
@@ -271,13 +261,11 @@ a {
   height: 100%;
 }
 
-/* Hover effect */
 .entire-book-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Book image */
 .entire-book-card img {
   width: 100%;
   height: 240px;
@@ -287,12 +275,10 @@ a {
   transition: transform 0.3s ease;
 }
 
-/* Slight zoom on hover for image */
 .entire-book-card:hover img {
   transform: scale(1.05);
 }
 
-/* Title */
 .entire-book-card h3 {
   font-size: 1.05rem;
   font-weight: 600;
@@ -300,7 +286,6 @@ a {
   color: #111;
 }
 
-/* Authors & published date */
 .entire-book-card p {
   font-size: 0.875rem;
   color: #555;
@@ -426,7 +411,6 @@ a {
   line-height: 1.6;
 }
 
-/* ---------- Pagination ---------- */
 .pagination {
   display: flex;
   align-items: center;
@@ -466,7 +450,7 @@ a {
 .booklist-page {
   padding: 2rem;
   font-family: "Arial", sans-serif;
-  padding-bottom: 6rem; /* space for footer */
+  padding-bottom: 6rem; 
 }
 
 .cart-container {
@@ -476,7 +460,6 @@ a {
   margin-bottom: 5rem;
 }
 
-/* Top Summary */
 .cart-summary {
   display: flex;
   justify-content: space-between;
@@ -489,7 +472,6 @@ a {
   font-size: 1.6rem;
   margin: 0;
   color: #333;
-
 }
 
 .cart-summary p {
@@ -518,7 +500,6 @@ a {
   background-color: #a82020;
 }
 
-/* Cart List */
 .cart-list {
   display: flex;
   flex-direction: column;
@@ -638,7 +619,6 @@ a {
   animation: pulse 0.5s ease;
 }
 
-/* Sticky Footer */
 .cart-footer {
   position: fixed;
   bottom: 0;
@@ -652,7 +632,6 @@ a {
   height: 5rem;
 }
 
-/* Empty state */
 .empty-booklist {
   display: flex;
   justify-content: center;
@@ -669,7 +648,6 @@ a {
   color: #0077ff;
 }
 
-/* Total in sticky footer */
 .cart-footer {
   position: fixed;
   bottom: 0;
@@ -681,7 +659,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .cart-total {
@@ -710,7 +687,7 @@ a {
   position: absolute;
   top: -8px;
   right: -12px;
-  background-color: #ff4d4d; /* red badge for visibility */
+  background-color: #ff4d4d; 
   color: white;
   width: 18px;
   height: 18px;
@@ -795,8 +772,6 @@ a {
 .checkout-button:hover {
   background-color: rgb(100, 197, 100);
   color: white;
-  
-
 }
 
 .contact-container {
